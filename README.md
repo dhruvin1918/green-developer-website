@@ -52,7 +52,8 @@ A modern, luxury real estate website designed for eco-friendly residential proje
 
 ## 👨‍💻 Developed By
 
-Dhruvin Parmar
+### Dhruvin Parmar
+
 PixelForgeX.dev
 
 ## 📞 Contact
