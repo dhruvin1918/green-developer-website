@@ -39,7 +39,7 @@ PixelForgeX.dev
 
 ## 📞 Contact
 
-* Instagram: @PixelForgeX.dev
+* Instagram: @pixelforgex.dev
 * Email: [pixelforgex.dev@gmail.com](mailto:pixelforgex.dev@gmail.com)
 
 ---
