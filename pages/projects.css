@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F0F0F;
+    color: #F5F5F5;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 60px;
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #00C26E;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #00C26E;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a.active {
+    color: #00C26E;
+}
+
+nav a.active::after {
+    width: 100%;
+}
+
+/* ================= HERO ================= */
+
+.page-hero {
+    height: 50vh;
+    padding-top: 120px;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url("https://images.unsplash.com/photo-1600585152220-90363fe7e115") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-hero h1 {
+    color: #F5F5F5;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    color: #B5B5B5;
+}
+
+/* ================= FILTER BUTTONS ================= */
+
+.prob {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pro-button {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #F5F5F5;
+    background-color: #1B4332;
+    border: 1px solid #00C26E;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.pro-button:hover {
+    background-color: #00C26E;
+    color: #000;
+}
+
+/* ================= CATEGORY TITLE ================= */
+
+.uppro {
+    padding: 60px 0 20px 0;
+    text-align: center;
+    background-color: #0F0F0F;
+    color: #F5F5F5;
+}
+
+/* ================= PROJECT GRID ================= */
+
+.projects-grid {
+    padding: 60px 80px;
+    display: flex;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    background-color: #111;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 320px;
+    background: #1A1A1A;
+    color: #F5F5F5;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    margin-bottom: 10px;
+    color: #B5B5B5;
+}
+
+.project-info span {
+    display: inline-block;
+    margin-top: 8px;
+    color: #00c26e;
+    font-weight: 600;
+}
+
+/* =========================
+    Footer
+========================= */
+
+.footer {
+    background: #0a0a0a;
+    padding: 80px 0 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.footer-logo img {
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    max-width: 380px;
+}
+
+.footer-description p {
+    color: #bbbbbb;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 70px;
+}
+
+.footer-links p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #bbbbbb;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00c26e;
+}
+
+.contact-links span {
+    color: white;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #777;
+    font-size: 13px;
+}
+
+/* ================
+    RESPONSIVE
+================== */
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width:1024px) {
+
+    header {
+        padding: 15px 40px;
+    }
+
+    .page-hero h1 {
+        font-size: 42px;
+    }
+
+    .projects-grid {
+        padding: 50px 40px;
+        gap: 40px;
+    }
+
+    .project-card {
+        width: 300px;
+    }
+
+    .footer-container {
+        padding: 0 40px;
+    }
+
+    .footer-content {
+        gap: 50px;
+    }
+
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width:768px) {
+
+    header {
+        padding: 15px 25px;
+    }
+
+    nav ul {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .page-hero {
+        height: 45vh;
+        padding-top: 100px;
+    }
+
+    .page-hero h1 {
+        font-size: 36px;
+    }
+
+    .page-hero p {
+        font-size: 14px;
+    }
+
+    /* filter buttons */
+
+    .prob {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .pro-button {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    /* project cards */
+
+    .projects-grid {
+        padding: 50px 25px;
+        gap: 30px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* footer */
+
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-container {
+        padding: 0 25px;
+    }
+
+}
+
+/* =========================
+   Small phones
+========================= */
+
+@media (max-width:480px) {
+
+    .logo img {
+        height: 40px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .page-hero h1 {
+        font-size: 30px;
+    }
+
+    .project-info h3 {
+        font-size: 20px;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+
+    .pro-button {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    .footer-logo img {
+        width: 110px;
+    }
+
+}
