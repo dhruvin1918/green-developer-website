@@ -25,6 +25,7 @@ A modern, luxury real estate website designed for eco-friendly residential proje
 ## 📷 Screenshots
 
 ### 🏠 Home Page
+<img src="ScreenShots/Home_page.png" width="800"/>
 ![Home](ScreenShots/Home_page.png)
 
 ---
