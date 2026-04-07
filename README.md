@@ -24,7 +24,25 @@ A modern, luxury real estate website designed for eco-friendly residential proje
 
 ## 📷 Screenshots
 
-(Add screenshots here)
+### 🏠 Home Page
+![Home](ScreenShots/Home_page.png)
+
+---
+
+### 🏢 Projects Page
+![Projects](ScreenShots/Projects_page.png)
+
+---
+
+### ℹ️ About Page
+![About](ScreenShots/About_us_page.png)
+
+---
+
+### 📞 Contact Page
+![Contact](ScreenShots/Contact_us_page.png)
+
+
 
 ## 📁 Folder Structure
 
